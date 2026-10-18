@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sug-1",
+    "title": "Add instant copy trade summary button",
+    "description": "Allow copying WFL calculations formatted for Roblox chat or Discord.",
+    "status": "planned",
+    "upvotes": 24,
+    "author_name": "Ocean",
+    "created_date": "2026-10-18T00:30:00.000Z"
+  },
+  {
+    "id": "sug-2",
+    "title": "Historical value fluctuation graphs",
+    "description": "Show 30-day value charts for top high-tier pets like Bat Dragon, Shadow Dragon, and Giraffe.",
+    "status": "under_review",
+    "upvotes": 41,
+    "author_name": "AdoptMeTrader99",
+    "created_date": "2026-10-18T01:10:00.000Z"
+  }
+]

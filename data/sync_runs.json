@@ -1,0 +1,31 @@
+[
+  {
+    "id": "sync_1792321550967",
+    "checked_at": "2026-10-18T11:05:50.541Z",
+    "status": "complete",
+    "trigger": "manual_admin_button",
+    "items_total": 1735,
+    "items_processed": 1735,
+    "new_items": 0,
+    "price_changes": 58,
+    "amvgg_valued": 1735,
+    "elvebredd_valued": 1677,
+    "amvgg_source": "https://amvgg.com/calculator",
+    "elvebredd_source": "https://elvebredd.com/adopt-me-calculator"
+  },
+  {
+    "checked_at": "2026-10-18T10:50:29.216Z",
+    "items_total": 1735,
+    "amvgg_valued": 1735,
+    "elvebredd_valued": 1677,
+    "missing_amvgg": 0,
+    "missing_elvebredd": 58,
+    "amvgg_source": "https://amvgg.com/calculator",
+    "elvebredd_source": "https://elvebredd.com/adopt-me-calculator",
+    "source_version": "613",
+    "status": "partial",
+    "items_processed": 1735,
+    "id": "id_1792320632178_95aeg",
+    "created_date": "2026-10-18T10:50:32.178Z"
+  }
+]

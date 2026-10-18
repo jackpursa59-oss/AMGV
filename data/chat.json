@@ -1,0 +1,31 @@
+[
+  {
+    "id": "msg-1",
+    "room": "wfl",
+    "author_name": "Ocean",
+    "author_id": "usr_ocean",
+    "author_avatar": "https://media.base44.com/images/public/6ad38c14b92beddf7aa3fec8/bbd511130_generated_image.png",
+    "text": "AMGV is fully restored and online! All 1,735+ pet values and items are updated with exact AMVGG & Elvebredd stats.",
+    "created_date": "2026-10-18T01:00:00.000Z"
+  },
+  {
+    "id": "msg-2",
+    "room": "wfl",
+    "author_name": "AdoptMeTrader99",
+    "author_id": "usr_trader",
+    "author_avatar": "https://media.base44.com/images/public/6ad38c14b92beddf7aa3fec8/bbd511130_generated_image.png",
+    "text": "WFL check: My FR Frost Dragon for FR Owl + FR Cow + Neon Kangaroo?",
+    "created_date": "2026-10-18T02:15:00.000Z"
+  },
+  {
+    "id": "msg-3",
+    "room": "wfl",
+    "author_name": "Ocean",
+    "author_id": "usr_ocean",
+    "author_avatar": "https://media.base44.com/images/public/6ad38c14b92beddf7aa3fec8/bbd511130_generated_image.png",
+    "reply_to_name": "AdoptMeTrader99",
+    "reply_to_text": "WFL check: My FR Frost Dragon for FR Owl...",
+    "text": "Win! Owl is ~240, Cow is ~0.21, Neon Kangaroo adds solid overpay.",
+    "created_date": "2026-10-18T02:20:00.000Z"
+  }
+]

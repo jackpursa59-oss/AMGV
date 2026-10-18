@@ -1,0 +1,8 @@
+{
+  "name": "AMGV (AdoptMeGlitchValues)",
+  "description": "The #1 Adopt Me Value List & WFL Calculator. Browse up-to-date pet values, demand, trades, and market trends.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "gw-frost-dragon",
+    "title": "Frost Dragon (FR) Community Giveaway",
+    "pet_name": "Frost Dragon",
+    "pet_image": "https://amvgg.com/items/Frost%20Dragon.webp",
+    "variant": "fr",
+    "value": 315,
+    "ends_at": "2026-10-25T20:00:00.000Z",
+    "status": "active",
+    "created_date": "2026-10-18T00:00:00.000Z",
+    "winner_name": null,
+    "description": "Enter for a chance to win a Fly Ride Frost Dragon! Winner drawn automatically."
+  },
+  {
+    "id": "gw-bat-dragon",
+    "title": "Bat Dragon Mega Neon Special Event",
+    "pet_name": "Bat Dragon",
+    "pet_image": "https://amvgg.com/items/Bat%20Dragon.webp",
+    "variant": "mega",
+    "value": 4000,
+    "ends_at": "2026-10-30T18:00:00.000Z",
+    "status": "active",
+    "created_date": "2026-10-18T00:00:00.000Z",
+    "winner_name": null,
+    "description": "Celebrating the return of AMGV! Must have a linked Roblox account."
+  }
+]
