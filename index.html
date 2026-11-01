@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <title>AdoptMe Values — The #1 Adopt Me Value List &amp; WFL Calculator</title>
-    <meta content="The most trusted Adopt Me value list. Browse up-to-date pet values, demand, and use the WFL calculator to find out if your trade is a Win, Fair, or Lose." name="description" />
-    <meta property="og:title" content="AdoptMe Values — The #1 Adopt Me Value List &amp; WFL Calculator" />
-    <meta property="og:description" content="The most trusted Adopt Me value list. Browse up-to-date pet values, demand, and use the WFL calculator to find out if your trade is a Win, Fair, or Lose." />
+    <title>AMGV (AdoptMeGlitchValues) — Adopt Me Value List &amp; WFL Calculator</title>
+    <meta content="The #1 Adopt Me Value List &amp; WFL Calculator. Browse up-to-date pet values, demand, trades, and market trends." name="description" />
+    <meta property="og:title" content="AMGV (AdoptMeGlitchValues) — Adopt Me Value List &amp; WFL Calculator" />
+    <meta property="og:description" content="The #1 Adopt Me Value List &amp; WFL Calculator. Browse up-to-date pet values, demand, trades, and market trends." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta content="yes" name="mobile-web-app-capable" />
@@ -45,6 +45,14 @@
           }
         });
       } catch (e) {}
+
+      // Suppress unhandled websocket transport disconnect errors
+      window.addEventListener('error', function(event) {
+        if (event?.message && (event.message.includes('websocket') || event.message.includes('WebSocket'))) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      }, true);
 
       // Initialize admin session token so all features & routes are unlocked
       try {
