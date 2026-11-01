@@ -58,11 +58,11 @@ const partysocket = new PartySocket({
           ]}),
           (0,L.jsxs)(`div`,{className:`flex items-center gap-2`,children:[
             (0,L.jsx)(SocialLinks,{}),
-            (0,L.jsx)(jt,{to:`/credits`,className:`text-[10px] font-bold text-muted-foreground hover:text-primary`,children:`Credits`})
+            (0,L.jsx)(jt,{to:`/credits`,className:`text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary`,children:`Credits`})
           ]})
         ]})
       ]}),
-      (0,L.jsx)(`nav`,{className:`hidden items-center gap-1 md:flex`,children:Eg.map(e=>{
+      (0,L.jsx)(`div`,{className:`mx-2 hidden h-7 w-px flex-none bg-border md:block`}),(0,L.jsx)(`nav`,{className:`hidden items-center gap-1 md:flex`,children:Eg.map(e=>{
         let r=Dg(e,n);
         return(0,L.jsxs)(jt,{to:e.path,className:`flex items-center gap-1.5 whitespace-nowrap rounded-md px-2.5 py-1.5 text-xs font-bold uppercase tracking-wider transition-colors ${r?`bg-secondary text-primary`:`text-muted-foreground hover:text-foreground`}`,children:[(0,L.jsx)(e.icon,{className:`h-3.5 w-3.5`}),e.label]},e.path);
       })}),

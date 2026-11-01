@@ -714,6 +714,7 @@ app.get('/api/sync-source/:source', async (req, res) => {
   if (source === 'amvgg') {
     try {
       const resp = await fetch('https://amvgg.com/calculator');
+      if (!resp.ok) return res.status(502).send(`AMVGG responded ${resp.status}`);
       const html = await resp.text();
       res.set('Content-Type', 'text/html');
       return res.send(html);
@@ -728,6 +729,7 @@ app.get('/api/sync-source/:source', async (req, res) => {
       const resp = await fetch('https://r.jina.ai/https://elvebredd.com/adopt-me-calculator', {
         headers: { 'X-Respond-With': 'html', 'X-No-Cache': 'true' },
       });
+      if (!resp.ok) return res.status(502).send(`Elvebredd responded ${resp.status}`);
       const html = await resp.text();
       res.set('Content-Type', 'text/html');
       return res.send(html);
