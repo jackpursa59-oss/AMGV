@@ -1,5 +1,19 @@
 [
   {
+    "id": "sync_1793560225342",
+    "checked_at": "2026-11-01T19:10:24.376Z",
+    "status": "complete",
+    "trigger": "scheduled_interval_30m",
+    "items_total": 1750,
+    "items_processed": 1750,
+    "new_items": 15,
+    "price_changes": 124,
+    "amvgg_valued": 1750,
+    "elvebredd_valued": 1690,
+    "amvgg_source": "https://amvgg.com/calculator",
+    "elvebredd_source": "https://elvebredd.com/adopt-me-calculator"
+  },
+  {
     "id": "sync_1792321550967",
     "checked_at": "2026-10-18T11:05:50.541Z",
     "status": "complete",
