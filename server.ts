@@ -810,7 +810,7 @@ app.post([
     const lookupMatch = promptStr.match(/look up\s+["']?([^"'\n,.]+)["']?/i) || promptStr.match(/search\s+["']?([^"'\n,.]+)["']?/i);
     if (lookupMatch) {
       const searchTerm = lookupMatch[1].trim().toLowerCase();
-      const match = pets.find(p => p.name.toLowerCase().includes(searchTerm) || searchTerm.includes(p.name.toLowerCase()));
+      const match = pets.find(p => p.name.toLowerCase() === searchTerm) || pets.find(p => p.name.toLowerCase().includes(searchTerm));
       if (match) {
         const demandStr = match.demand === 3 ? 'High' : match.demand === 2 ? 'Medium' : 'Low';
         const reply = `Found "${match.name}" (${match.category || 'item'}${match.rarity ? ', ' + match.rarity : ''}):
