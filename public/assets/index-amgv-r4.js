@@ -47,18 +47,18 @@ const partysocket = new PartySocket({
   let a=null;try{a=Zh()}catch{}
   let isAuth=Boolean(a?.isAuthenticated&&a?.user);
   return(0,L.jsxs)(`header`,{className:`sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md`,children:[
-    (0,L.jsxs)(`div`,{className:`mx-auto flex h-16 max-w-7xl items-center justify-between px-3 sm:px-6`,children:[
-      (0,L.jsxs)(`div`,{className:`flex items-center gap-2.5`,children:[
-        (0,L.jsx)(jt,{to:`/admin`,title:`Staff Admin Panel`,onClick:()=>t(!1),className:`flex items-center rounded-lg p-0.5 hover:ring-2 hover:ring-primary/50 transition-all`,children:(0,L.jsx)(Tg,{size:30})}),
-        (0,L.jsxs)(`div`,{className:`flex flex-col justify-center gap-1.5`,children:[
-          (0,L.jsxs)(jt,{to:`/`,onClick:()=>t(!1),className:`flex items-center gap-1.5 font-black text-sm tracking-tight`,children:[
+    (0,L.jsxs)(`div`,{className:`mx-auto flex h-20 max-w-7xl items-center justify-between px-3 sm:px-6`,children:[
+      (0,L.jsxs)(`div`,{className:`flex items-center gap-3`,children:[
+        (0,L.jsx)(jt,{to:`/admin`,title:`Staff Admin Panel`,onClick:()=>t(!1),className:`flex items-center rounded-lg p-0.5 hover:ring-2 hover:ring-primary/50 transition-all`,children:(0,L.jsx)(Tg,{size:44})}),
+        (0,L.jsxs)(`div`,{className:`flex flex-col justify-center gap-2`,children:[
+          (0,L.jsxs)(jt,{to:`/`,onClick:()=>t(!1),className:`flex items-baseline gap-1.5 text-lg font-black leading-none tracking-tight`,children:[
             `GLITCH`,
             (0,L.jsx)(`span`,{className:`text-primary`,children:`VALUES`}),
             (0,L.jsx)(`span`,{className:`ml-0.5 text-[9px] font-bold text-muted-foreground`,children:`(AMGV)`})
           ]}),
-          (0,L.jsxs)(`div`,{className:`flex items-center justify-between gap-6 pr-4`,children:[
+          (0,L.jsxs)(`div`,{className:`flex items-center gap-4`,children:[
             (0,L.jsx)(SocialLinks,{}),
-            (0,L.jsx)(jt,{to:`/credits`,className:`text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary`,children:`Credits`})
+            (0,L.jsx)(jt,{to:`/credits`,className:`text-[11px] font-semibold uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary`,children:`Credits`})
           ]})
         ]})
       ]}),
@@ -81,7 +81,7 @@ const partysocket = new PartySocket({
 const DiscordGlyph=(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,width:14,height:14,fill:`currentColor`,"aria-hidden":!0,children:(0,L.jsx)(`path`,{d:`M20.3 4.4A18 18 0 0 0 15.8 3l-.6 1.2a16 16 0 0 0-6.4 0L8.2 3A18 18 0 0 0 3.7 4.4C.9 8.6.2 12.7.5 16.7a18 18 0 0 0 5.5 2.8l1.2-1.9a11.6 11.6 0 0 1-1.9-.9l.5-.4a12.8 12.8 0 0 0 11 0l.5.4c-.6.4-1.2.7-1.9.9l1.2 1.9a18 18 0 0 0 5.5-2.8c.5-4.6-.7-8.7-3-12.3ZM8.5 14.3c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm7 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z`})});
 const YouTubeGlyph=(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,width:14,height:14,fill:`currentColor`,"aria-hidden":!0,children:(0,L.jsx)(`path`,{d:`M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z`})});
 function SocialIconLink({href,fallback,label,icon}){
-  let cls=`flex h-6 w-6 items-center justify-center rounded-md border border-border bg-secondary text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary`;
+  let cls=`flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-secondary text-muted-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary hover:text-primary`;
   return href?(0,L.jsx)(`a`,{href,target:`_blank`,rel:`noopener noreferrer`,"aria-label":label,title:label,className:cls,children:icon}):(0,L.jsx)(jt,{to:fallback,"aria-label":label,title:label,className:cls,children:icon});
 }
 function SocialLinks(){
@@ -467,7 +467,7 @@ var u_=[{key:`fly`,type:`F`,label:`Fly`},{key:`ride`,type:`R`,label:`Ride`},{key
         className: 'mx-auto max-w-6xl px-4 py-8 sm:px-6',
         children: [
           (0,L.jsxs)('div', {
-            className: 'flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-6',
+            className: 'flex flex-col gap-5 border-b border-border pb-6 sm:flex-row sm:items-end sm:justify-between',
             children: [
               (0,L.jsxs)('div', {
                 children: [
@@ -476,16 +476,16 @@ var u_=[{key:`fly`,type:`F`,label:`Fly`},{key:`ride`,type:`R`,label:`Ride`},{key
                 ]
               }),
               (0,L.jsxs)('div', {
-                className: 'flex items-center gap-2 bg-secondary/80 p-1 rounded-2xl border border-border',
+                className: 'grid grid-cols-3 gap-1 rounded-2xl border border-border bg-secondary/60 p-1 sm:flex sm:w-auto',
                 children: [
                   (0,L.jsx)('button', {
                     onClick: () => setActiveTab('browse'),
-                    className: `px-4 py-2 text-xs font-bold rounded-xl transition-all ${activeTab === 'browse' ? 'bg-primary text-primary-foreground shadow-md' : 'text-muted-foreground hover:text-foreground'}`,
+                    className: `px-4 py-2.5 justify-center text-xs font-bold rounded-xl transition-all duration-200 ${activeTab === 'browse' ? 'bg-primary text-primary-foreground shadow-md' : 'text-muted-foreground hover:text-foreground'}`,
                     children: 'Browse Trades'
                   }),
                   (0,L.jsxs)('button', {
                     onClick: () => setActiveTab('mailbox'),
-                    className: `relative px-4 py-2 text-xs font-bold rounded-xl transition-all flex items-center gap-1.5 ${activeTab === 'mailbox' ? 'bg-primary text-primary-foreground shadow-md' : 'text-muted-foreground hover:text-foreground'}`,
+                    className: `relative px-4 py-2.5 justify-center text-xs font-bold rounded-xl transition-all duration-200 flex items-center gap-1.5 ${activeTab === 'mailbox' ? 'bg-primary text-primary-foreground shadow-md' : 'text-muted-foreground hover:text-foreground'}`,
                     children: [
                       'Mailbox',
                       pendingOffersCount > 0 && (0,L.jsx)('span', { className: 'rounded-full bg-rose-500 px-1.5 py-0.2 text-[10px] font-black text-white animate-pulse', children: pendingOffersCount })
@@ -493,7 +493,7 @@ var u_=[{key:`fly`,type:`F`,label:`Fly`},{key:`ride`,type:`R`,label:`Ride`},{key
                   }),
                   (0,L.jsxs)('button', {
                     onClick: () => setActiveTab('create'),
-                    className: `px-4 py-2 text-xs font-bold rounded-xl transition-all flex items-center gap-1.5 ${activeTab === 'create' ? 'bg-primary text-primary-foreground shadow-md' : 'text-muted-foreground hover:text-foreground'}`,
+                    className: `px-4 py-2.5 justify-center text-xs font-bold rounded-xl transition-all duration-200 flex items-center gap-1.5 ${activeTab === 'create' ? 'bg-primary text-primary-foreground shadow-md' : 'text-muted-foreground hover:text-foreground'}`,
                     children: [(0,L.jsx)(Mi, { className: 'h-3.5 w-3.5' }), 'List a Trade']
                   })
                 ]
