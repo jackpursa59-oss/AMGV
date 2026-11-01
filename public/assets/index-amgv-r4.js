@@ -47,18 +47,18 @@ const partysocket = new PartySocket({
   let a=null;try{a=Zh()}catch{}
   let isAuth=Boolean(a?.isAuthenticated&&a?.user);
   return(0,L.jsxs)(`header`,{className:`sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-md`,children:[
-    (0,L.jsxs)(`div`,{className:`mx-auto flex h-20 max-w-7xl items-center justify-between px-3 sm:px-6`,children:[
+    (0,L.jsxs)(`div`,{className:`mx-auto flex h-14 max-w-7xl items-center justify-between px-3 sm:px-6`,children:[
       (0,L.jsxs)(`div`,{className:`flex items-center gap-3`,children:[
-        (0,L.jsx)(jt,{to:`/admin`,title:`Staff Admin Panel`,onClick:()=>t(!1),className:`flex items-center rounded-lg p-0.5 hover:ring-2 hover:ring-primary/50 transition-all`,children:(0,L.jsx)(Tg,{size:44})}),
+        (0,L.jsx)(jt,{to:`/admin`,title:`Staff Admin Panel`,onClick:()=>t(!1),className:`flex items-center rounded-lg p-0.5 hover:ring-2 hover:ring-primary/50 transition-all`,children:(0,L.jsx)(Tg,{size:32})}),
         (0,L.jsxs)(`div`,{className:`flex flex-col justify-center gap-2`,children:[
-          (0,L.jsxs)(jt,{to:`/`,onClick:()=>t(!1),className:`flex items-baseline gap-1.5 text-lg font-black leading-none tracking-tight`,children:[
+          (0,L.jsxs)(jt,{to:`/`,onClick:()=>t(!1),className:`flex items-baseline gap-1.5 text-sm font-black leading-none tracking-tight`,children:[
             `GLITCH`,
             (0,L.jsx)(`span`,{className:`text-primary`,children:`VALUES`}),
             (0,L.jsx)(`span`,{className:`ml-0.5 text-[9px] font-bold text-muted-foreground`,children:`(AMGV)`})
           ]}),
           (0,L.jsxs)(`div`,{className:`flex items-center gap-4`,children:[
             (0,L.jsx)(SocialLinks,{}),
-            (0,L.jsx)(jt,{to:`/credits`,className:`text-[11px] font-semibold uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary`,children:`Credits`})
+            (0,L.jsx)(jt,{to:`/credits`,className:`text-[10px] font-semibold uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary`,children:`Credits`})
           ]})
         ]})
       ]}),
@@ -81,7 +81,7 @@ const partysocket = new PartySocket({
 const DiscordGlyph=(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,width:14,height:14,fill:`currentColor`,"aria-hidden":!0,children:(0,L.jsx)(`path`,{d:`M20.3 4.4A18 18 0 0 0 15.8 3l-.6 1.2a16 16 0 0 0-6.4 0L8.2 3A18 18 0 0 0 3.7 4.4C.9 8.6.2 12.7.5 16.7a18 18 0 0 0 5.5 2.8l1.2-1.9a11.6 11.6 0 0 1-1.9-.9l.5-.4a12.8 12.8 0 0 0 11 0l.5.4c-.6.4-1.2.7-1.9.9l1.2 1.9a18 18 0 0 0 5.5-2.8c.5-4.6-.7-8.7-3-12.3ZM8.5 14.3c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm7 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z`})});
 const YouTubeGlyph=(0,L.jsx)(`svg`,{viewBox:`0 0 24 24`,width:14,height:14,fill:`currentColor`,"aria-hidden":!0,children:(0,L.jsx)(`path`,{d:`M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z`})});
 function SocialIconLink({href,fallback,label,icon}){
-  let cls=`flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-secondary text-muted-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary hover:text-primary`;
+  let cls=`flex h-7 w-7 items-center justify-center rounded-md border border-border bg-secondary text-muted-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary hover:text-primary`;
   return href?(0,L.jsx)(`a`,{href,target:`_blank`,rel:`noopener noreferrer`,"aria-label":label,title:label,className:cls,children:icon}):(0,L.jsx)(jt,{to:fallback,"aria-label":label,title:label,className:cls,children:icon});
 }
 function SocialLinks(){
@@ -166,7 +166,7 @@ function i_({onSelect:e,excludeIds:t,onClose:n}){let[r,i]=(0,_.useState)(``),[a,
   for(let o=0;o<18;o++){
     let s=e[o];
     if(s){
-      a.push((0,L.jsxs)(`div`,{className:`group relative aspect-square overflow-hidden rounded-xl border border-primary/40 bg-card/90 flex flex-col items-center justify-center p-1 hover:border-primary hover:shadow-[0_0_15px_rgba(59,178,214,0.18)] transition-all`,children:[
+      a.push((0,L.jsxs)(`div`,{className:`group relative aspect-square overflow-hidden rounded-lg border-2 border-rose-400 bg-card/90 flex flex-col items-center justify-center p-1 hover:border-rose-300 hover:shadow-[0_0_15px_rgba(251,113,133,0.25)] transition-all`,children:[
         (0,L.jsx)(`span`,{className:`absolute left-1 top-1 z-10 rounded bg-background/90 px-1 py-0.2 text-[8px] font-black text-muted-foreground/80 border border-border/40`,children:`#${o+1}`}),
         (0,L.jsx)(xg,{item:s,className:`glitch-img h-full w-full object-contain p-0.5`}),
         (0,L.jsxs)(`div`,{className:`absolute inset-x-0 bottom-0 flex items-center justify-between gap-1 bg-background/95 px-1.5 py-0.5 backdrop-blur-xs text-[8px] border-t border-border/40`,children:[
@@ -179,15 +179,14 @@ function i_({onSelect:e,excludeIds:t,onClose:n}){let[r,i]=(0,_.useState)(``),[a,
         ]})
       ]},s.uid));
     } else {
-      a.push((0,L.jsxs)(`button`,{type:`button`,onClick:t,title:`Add item into slot #${o+1} (${e.length}/18)`,className:`group relative flex aspect-square w-full flex-col items-center justify-center rounded-xl border border-dashed border-border/60 bg-secondary/15 transition-all hover:border-primary/70 hover:bg-primary/5 hover:scale-[1.02]`,children:[
+      a.push((0,L.jsxs)(`button`,{type:`button`,onClick:t,title:`Add item into slot #${o+1} (${e.length}/18)`,className:`group relative flex aspect-square w-full flex-col items-center justify-center rounded-lg border-2 border-rose-400 bg-gradient-to-br from-rose-300/35 to-orange-200/25 transition-all hover:brightness-110`,children:[
         (0,L.jsx)(`span`,{className:`absolute left-1.5 top-1.5 text-[8px] font-black text-muted-foreground/50`,children:`#${o+1}`}),
-        (0,L.jsx)(`div`,{className:`flex h-7 w-7 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-all group-hover:bg-primary group-hover:text-primary-foreground group-hover:shadow-[0_0_12px_rgba(59,178,214,0.3)]`,children:(0,L.jsx)(Mi,{className:`h-3.5 w-3.5`})}),
-        (0,L.jsx)(`span`,{className:`mt-1 text-[8px] font-bold text-muted-foreground group-hover:text-primary`,children:`Add`})
+        o===e.length?(0,L.jsx)(`div`,{className:`flex h-8 w-8 items-center justify-center rounded-full bg-white/85 text-rose-400 shadow transition-transform group-hover:scale-110`,children:(0,L.jsx)(Mi,{className:`h-3.5 w-3.5`})}):null
       ]}, `slot-${o}`));
     }
   }
-  return (0,L.jsxs)(`div`,{className:`w-full max-w-[560px] rounded-2xl border border-border/80 bg-card/60 p-3 shadow-lg backdrop-blur`,children:[
-    (0,L.jsx)(`div`,{className:`grid grid-cols-6 gap-1.5`,children:a}),
+  return (0,L.jsxs)(`div`,{className:`w-full max-w-[340px] rounded-2xl border border-border/80 bg-card/60 p-3 shadow-lg backdrop-blur`,children:[
+    (0,L.jsx)(`div`,{className:`grid grid-cols-3 gap-1.5 max-h-[22rem] overflow-y-auto pr-1`,children:a}),
     (0,L.jsxs)(`div`,{className:`mt-2.5 flex items-center justify-between px-1 text-[10px] text-muted-foreground`,children:[
       (0,L.jsxs)(`span`,{className:`font-bold`,children:[`18-Slot Trade Box`]}),
       (0,L.jsxs)(`span`,{className:`font-black ${e.length===18?`text-amber-400`:`text-primary`}`,children:[e.length,`/18 Slots`]})
