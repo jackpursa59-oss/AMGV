@@ -50,7 +50,6 @@ let offers = loadJson<any[]>('offers.json', []);
 let staffApplications = loadJson<any[]>('applications.json', []);
 let bans = loadJson<any[]>('bans.json', []);
 let settings = loadJson<any>('settings.json', { discord_url: '', staff_hiring_active: true, announcement: 'Official AMGV Trading Community: 18-slot trades and Discord active!' });
-let analytics = loadJson<any>('analytics.json', { daily: {}, total_calc_uses: 2341, total_visitors: 5120 });
 
 // Current user profile
 let io: SocketIOServer | null = null;
@@ -109,47 +108,6 @@ app.get(['/api/apps/:appId/stats', '/api/apps/:appId/runtime/stats'], (_req, res
 });
 
 // 2. Auth Endpoints
-// Real Analytics API
-app.get('/api/analytics/summary', (_req, res) => {
-  const days: { date: string; visitors: number; calc_uses: number }[] = [];
-  const now = new Date();
-  for (let i = 6; i >= 0; i--) {
-    const d = new Date(now.getTime() - i * 86400000);
-    const dateStr = d.toISOString().split('T')[0];
-    const rec = analytics.daily?.[dateStr] || {};
-    days.push({
-      date: dateStr,
-      visitors: (rec.page_views || 0) + 380 + ((d.getDay() * 47) % 120),
-      calc_uses: (rec.calc_uses || 0) + 210 + ((d.getDay() * 63) % 150) + (trades.length * 4)
-    });
-  }
-  res.json({
-    days,
-    visitors7d: days.map(d => d.visitors),
-    calculatorUses7d: days.map(d => d.calc_uses),
-    totalCalculations: analytics.total_calc_uses + (trades.length * 7),
-    totalVisitors: analytics.total_visitors || 5120,
-    totalTrades: trades.length,
-    totalMessages: chatMessages.length,
-    activeGiveaways: 0
-  });
-});
-
-app.post('/api/analytics/track', (req, res) => {
-  const { type } = req.body || {};
-  const today = new Date().toISOString().split('T')[0];
-  analytics.daily = analytics.daily || {};
-  if (!analytics.daily[today]) {
-    analytics.daily[today] = { visitors: 0, calc_uses: 0, page_views: 0 };
-  }
-  if (type === 'calc_use') {
-    analytics.daily[today].calc_uses = (analytics.daily[today].calc_uses || 0) + 1;
-    analytics.total_calc_uses = (analytics.total_calc_uses || 0) + 1;
-    saveJson('analytics.json', analytics);
-  }
-  res.json({ success: true });
-});
-
 // Settings API
 app.get('/api/settings', (_req, res) => {
   res.json(settings);
