@@ -56,7 +56,7 @@ const partysocket = new PartySocket({
             (0,L.jsx)(`span`,{className:`text-primary`,children:`VALUES`}),
             (0,L.jsx)(`span`,{className:`ml-0.5 text-[9px] font-bold text-muted-foreground`,children:`(AMGV)`})
           ]}),
-          (0,L.jsxs)(`div`,{className:`flex items-center gap-2`,children:[
+          (0,L.jsxs)(`div`,{className:`flex items-center justify-between gap-6 pr-4`,children:[
             (0,L.jsx)(SocialLinks,{}),
             (0,L.jsx)(jt,{to:`/credits`,className:`text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary`,children:`Credits`})
           ]})
